@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: scratch-lottery-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python lottery_bot.py
+    plan: free
+    autoDeploy: true
+    envVars:
+      BOT_TOKEN:
+        value: 8226521231:AAHFvR36ldmjlAWzUW95Ind3jhX_VqaIZz4
